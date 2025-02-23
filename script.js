@@ -1,4 +1,4 @@
-const startDate = new Date('2025-02-22'); // Fecha de inicio del calendario
+const startDate = new Date('2025-02-21'); // Fecha de inicio del calendario
 const now = new Date(); // Fecha actual
 
 // Cargar los datos del calendario y los códigos válidos
