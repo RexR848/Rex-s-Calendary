@@ -10,7 +10,7 @@
         "buttonActionContent": "console.log('Regalo del día 1')",
         "backgroundColor": "#282424",
         "textColor": "white",
-        "audioUrl": "lovefool.mp3",
+        "audioUrl": "/lovefool.mp3",
         "audioStartTime": 42,
         "audioFadeInDuration": 5
       },
