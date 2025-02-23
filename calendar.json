@@ -1,0 +1,75 @@
+{
+    "days": [
+      {
+        "day": 1,
+        "image": "https://media.tenor.com/syeuJx2kEjYAAAAM/gatuwu.gif",
+        "title": "¡Feliz inicio!",
+        "text": "Has abierto la primera cajita del calendario de Adviento.",
+        "buttonText": "Abrir regalo",
+        "buttonActionType": "code",
+        "buttonActionContent": "console.log('Regalo del día 1')",
+        "backgroundColor": "#282424",
+        "textColor": "white",
+        "audioUrl": "lovefool.mp3",
+        "audioStartTime": 42,
+        "audioFadeInDuration": 5
+      },
+      {
+        "day": 2,
+        "image": "https://via.placeholder.com/150?text=Imagen+2",
+        "title": "Día 2",
+        "text": "Sigue abriendo y encuentra sorpresas.",
+        "buttonText": "Ver más",
+        "buttonActionType": "code",
+        "buttonActionContent": "window.open('https://example.com/regalo-dia-2', '_blank')",
+        "backgroundColor": "#e0ffff",
+        "textColor": "black",
+        "audioUrl": "lovefool.mp3",
+        "audioStartTime": 42,
+        "audioFadeInDuration": 5
+      },
+      {
+        "day": 3,
+        "image": "https://img.freepik.com/foto-gratis/escena-primavera-flores-mariposas_23-2150169999.jpg?semt=ais_hybrid",
+        "title": "¡Día 3!",
+        "text": "Un día más de alegría y sorpresas.",
+        "buttonText": "¡Qué emoción!",
+        "buttonActionType": "code",
+        "buttonActionContent": "alert('Regalo del día 3')",
+        "backgroundColor": "#ffebcd",
+        "textColor": "#8b0000",
+        "audioUrl": "https://example.com/audio3.mp3",
+        "audioStartTime": 5,
+        "audioFadeInDuration": 5
+      },
+      {
+        "day": 4,
+        "image": "https://via.placeholder.com/150?text=Imagen+4",
+        "title": "Día 4",
+        "text": "Recibe un regalo que te hará sonreír.",
+        "buttonText": "Abrir caja",
+        "buttonActionType": "link",
+        "buttonActionContent": "https://example.com/regalo-dia-4",
+        "backgroundColor": "#dcdcdc",
+        "textColor": "#2f4f4f",
+        "audioUrl": "https://example.com/audio4.mp3",
+        "audioStartTime": 15,
+        "audioFadeInDuration": 5
+      },
+      {
+        "day": 5,
+        "image": "https://via.placeholder.com/150?text=Imagen+5",
+        "title": "¡Sorpresa!",
+        "text": "Hoy tienes una sorpresa especial.",
+        "buttonText": "Ver regalo",
+        "buttonActionType": "code",
+        "buttonActionContent": "console.log('Regalo del día 5')",
+        "backgroundColor": "#ffdead",
+        "textColor": "#00008b",
+        "audioUrl": "https://example.com/audio5.mp3",
+        "audioStartTime": 20,
+        "audioFadeInDuration": 5
+      }
+    ]
+  }
+  

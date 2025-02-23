@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oli</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #34495e;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <h1>oliii</h1>
+    <p>
+        Esto fue hecho para que tengas todos los regalos que no has recibido y que no te pude dar el 14 por el mal momento. <br><br>
+        Algunos regalos son de antes del 14, pero otros son de después, ya sea porque quería darte algo más, apenas logré terminar o arreglar, o porque apenas llegó el día de hoy. <br><br>
+        Como sea, cada día podrás abrir un regalo nuevo. <br><br>
+        Los mejores (catalogados por mí) se abren cada 5 regalos, y algunos tendrán un mini juego para llegar al regalo del día. <br><br>
+        Aveces apareceran codigos que puedes usar para abrir otro regalo el mismo dia, solo mira bien todo, o pideme uno JAJ.<br><br>
+        Te amo mucho, amor. Perdón por todo, eres la mejor.
+    </p>
+    
+    <button onclick="continuar()">Continuar</button>
+    <audio id="background-music" autoplay loop>
+        <source src="Instrumental.mp3" type="audio/mpeg">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+    
+    <script>
+        // Función para obtener el valor de una cookie
+        function getCookie(name) {
+            let cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                let cookie = cookies[i].trim();
+                if (cookie.indexOf(name + '=') == 0) {
+                    return cookie.substring(name.length + 1);
+                }
+            }
+            return null;
+        }
+
+        // Función para establecer una cookie
+        function setCookie(name, value, days) {
+            let expires = '';
+            if (days) {
+                let date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = '; expires=' + date.toUTCString();
+            }
+            document.cookie = name + '=' + value + expires + '; path=/';
+        }
+
+        // Función para redirigir al usuario a otra página
+        function continuar() {
+            window.location.href = 'incest.html';
+        }
+
+        // Verificar si es la primera visita
+        if (getCookie('firstVisit') === null) {
+            // Primera visita, establecer cookie
+            setCookie('firstVisit', 'true', 365);
+        } else {
+            // No es la primera visita, redirigir directamente
+            window.location.href = 'incest.html';
+        }
+
+        // Establecer el volumen del audio después de cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('background-music');
+            audio.volume = 1;
+        });
+    </script>
+</body>
+</html>

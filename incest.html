@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Adviento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar">
+            <!-- 30 cajitas de Adviento -->
+            <div class="day locked" data-day="1">1</div>
+            <div class="day locked" data-day="2">2</div>
+            <div class="day locked" data-day="3">3</div>
+            <div class="day locked" data-day="4">4</div>
+            <div class="day locked" data-day="5">5</div>
+            <!-- ... hasta el día 30 -->
+        </div>
+        <div class="code-container">
+            <input type="text" id="code-input" class="code-input" placeholder="Ingresa tu código aquí">
+            <button id="code-button" class="code-button">Usar código</button>
+        </div>
+    </div>
+
+    <!-- Popup de regalo -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="close-popup" class="close-btn">&times;</span>
+            <img id="popup-image" src="" alt="Imagen de regalo" class="popup-image">
+            <h2 id="gift-title">¡Sorpresa!</h2>
+            <p id="gift-message">¡Has abierto una cajita y tienes un regalo!</p>
+            <button id="gift-button">Abrir regalo</button>
+        </div>
+    </div>
+
+    <!-- Contenedor de corazones -->
+    <div id="hearts-container" class="hearts-container"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
